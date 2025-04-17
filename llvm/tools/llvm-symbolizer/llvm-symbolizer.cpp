@@ -401,6 +401,7 @@ static opt::InputArgList parseOptions(int Argc, char *Argv[], bool IsAddr2Line,
   }
   if (Args.hasArg(OPT_version)) {
     outs() << ToolName << '\n';
+    outs() << "GSYM support patch" << '\n';
     cl::PrintVersionMessage();
     exit(0);
   }
